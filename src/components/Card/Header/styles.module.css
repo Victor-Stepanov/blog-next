@@ -1,0 +1,12 @@
+.header {
+  padding: 4px 15px;
+
+  border-radius: 5px;
+  background-color: #e5f4ff;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
