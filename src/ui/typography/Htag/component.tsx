@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./htag.module.css";
 
 interface HtagProps {
-  tag: "h1" | "h2" | "h3";
+  tag: "h1" | "h2" | "h3" | "h4";
   children: React.ReactNode;
 }
 
@@ -15,6 +15,8 @@ export const Htag = ({ tag, children }: HtagProps) => {
       return <h2 className={styles.h2}>{children}</h2>;
     case "h3":
       return <h3 className={styles.h3}>{children}</h3>;
+    case "h4":
+      return <h4 className={styles.h4}>{children}</h4>;
     default:
       return <></>;
   }

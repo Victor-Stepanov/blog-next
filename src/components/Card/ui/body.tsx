@@ -27,7 +27,7 @@ export const CardBody = ({
           onClick={() => setCount((current) => current + 1)}
         />
       </div>
-      <Htag tag="h3" children={title} />
+      <Htag tag="h4" children={title} />
       <Text>{description}</Text>
     </div>
   );

@@ -1,18 +1,25 @@
 .h1 {
   margin: 0;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.h2 {
+  margin: 0;
 
   font-size: 34px;
   font-weight: 700;
   line-height: normal;
 }
 
-.h2 {
+.h3 {
   font-size: 28px;
   font-weight: 700;
   line-height: normal;
 }
 
-.h3 {
+.h4 {
   margin: 0;
 
   font-size: 18px;
