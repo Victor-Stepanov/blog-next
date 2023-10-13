@@ -1,0 +1,11 @@
+.root {
+  display: inline-block;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
