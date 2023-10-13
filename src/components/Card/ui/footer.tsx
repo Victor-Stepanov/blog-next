@@ -1,13 +1,8 @@
-import React from "react";
+import styles from "./ui.module.css";
 
-import styles from "./styles.module.css";
+import { CardFooterProps } from "@/types/component.types";
 
-import { Time } from "@/ui";
-import { BaseLink } from "@/ui/Link/component";
-
-interface CardFooterProps {
-  readTime: string;
-}
+import { BaseLink, Time } from "@/ui";
 
 export const CardFooter = ({ readTime }: CardFooterProps) => {
   return (

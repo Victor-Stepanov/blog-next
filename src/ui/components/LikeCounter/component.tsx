@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./styles.module.css";
+import styles from "./likeCounter.module.css";
 
 import { ButtonWithSvg } from "@/ui/buttons/ButtonWithSvg/component";
 import { Like } from "@/ui/icons/like";

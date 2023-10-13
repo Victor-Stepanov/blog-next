@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./styles.module.css";
+import styles from "./category.module.css";
 
 interface CategoryProps {
   children: React.ReactNode;
