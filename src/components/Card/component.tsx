@@ -1,18 +1,21 @@
 import React from "react";
 
-import { CardBody } from "./Body/component";
-import { CardFooter } from "./Footer/component";
-import { CardHeader } from "./Header/component";
-import styles from "./styles.module.css";
+import styles from "./card.module.css";
 
 import { post } from "./temp/mockExample";
+import { CardHeader, CardBody, CardFooter } from "./ui";
 
 export const Card = () => {
   return (
     <article className={styles.root}>
       <div className={styles.container}>
         <CardHeader imageSrc={post.imageSrc} />
-        <CardBody {...post} />
+        <CardBody
+          title={post.title}
+          description={post.description}
+          category={post.category}
+          createdAt={post.createdAt}
+        />
         <CardFooter readTime={post.readTime} />
       </div>
     </article>

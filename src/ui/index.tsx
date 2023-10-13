@@ -1,6 +1,9 @@
+import { LikeCounter } from "./components/LikeCounter/component";
+import { BaseLink } from "./Link/component";
+import { Category } from "./typography/Category/component";
 import { Htag } from "./typography/Htag/component";
-import { P } from "./typography/P/component";
 import { Tag } from "./typography/Tag/component";
+import { Text } from "./typography/Text/component";
 import { Time } from "./typography/Time/component";
 
-export { Htag, P, Tag, Time };
+export { Htag, Text, Tag, Time, Category, LikeCounter, BaseLink };

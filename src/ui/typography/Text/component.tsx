@@ -1,9 +1,9 @@
 import cn from "classnames";
 import React from "react";
 
-import styles from "./p.module.css";
+import styles from "./text.module.css";
 
-interface PProps
+interface TextProps
   extends React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLParagraphElement>,
     HTMLParagraphElement
@@ -11,7 +11,7 @@ interface PProps
   size?: "small" | "default" | "large";
 }
 
-export const P = ({ children, size = "small", ...rest }: PProps) => {
+export const Text = ({ children, size = "small", ...rest }: TextProps) => {
   return (
     <p className={cn(styles.root, size && styles[`p_size_${size}`])} {...rest}>
       {children}

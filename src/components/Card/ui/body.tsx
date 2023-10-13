@@ -1,19 +1,10 @@
 "use client";
-
 import React from "react";
 
-import styles from "./styles.module.css";
+import styles from "./ui.module.css";
 
-import { Tag, Htag, P, Time } from "@/ui";
-import { LikeCounter } from "@/ui/components/LikeCounter/component";
-import { Category } from "@/ui/typography/Category/component";
-
-interface CardBodyProps {
-  category: string;
-  createdAt: string;
-  title: string;
-  description: string;
-}
+import { CardBodyProps } from "@/types/component.types";
+import { Category, Tag, Time, Htag, Text, LikeCounter } from "@/ui";
 
 export const CardBody = ({
   category,
@@ -37,7 +28,7 @@ export const CardBody = ({
         />
       </div>
       <Htag tag="h3" children={title} />
-      <P>{description}</P>
+      <Text>{description}</Text>
     </div>
   );
 };
