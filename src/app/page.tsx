@@ -1,5 +1,5 @@
-import { Card } from "@/components/Card";
+import { PostContainer } from "@/containers/PostContainer";
 
 export default function Home() {
-  return <Card />;
+  return <PostContainer />;
 }

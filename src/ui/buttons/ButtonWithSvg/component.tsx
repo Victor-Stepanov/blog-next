@@ -3,11 +3,9 @@ import React from "react";
 
 import styles from "./button.module.css";
 
-interface ButtonWithSvgProps
-  extends React.DetailedHTMLProps<
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
-  > {
+import { ButtonProps } from "@/types/button.types";
+
+interface ButtonWithSvgProps extends ButtonProps {
   Icon: React.ComponentType;
   className?: string;
 }

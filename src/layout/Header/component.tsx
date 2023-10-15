@@ -1,8 +1,10 @@
+import cn from "classnames";
 import React from "react";
+
 import styles from "./header.module.css";
+
 import { BaseLink, Htag } from "@/ui";
 import { GitHub } from "@/ui/icons/github";
-import cn from "classnames";
 
 interface HeaderProps {
   className: string;
