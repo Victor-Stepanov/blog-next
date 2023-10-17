@@ -1,10 +1,10 @@
 import styles from "./ui.module.css";
 
-import { CardFooterProps } from "@/types/component.types";
+import { PostFooterProps } from "@/interfaces/component.interfaces";
 
 import { BaseLink, Time } from "@/ui";
 
-export const CardFooter = ({ readTime }: CardFooterProps) => {
+export const PostFooter = ({ readTime }: PostFooterProps) => {
   return (
     <footer className={styles.footer}>
       <Time children={readTime} />
