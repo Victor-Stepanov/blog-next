@@ -14,6 +14,7 @@ export const PostList = ({ data }: { data: PostResponse[] }) => {
           return (
             <li key={post.id}>
               <Post
+                id={post.id}
                 gitHubLink="https://github.com/Victor-Stepanov"
                 title={post.title}
                 body={post.body}

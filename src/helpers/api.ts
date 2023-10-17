@@ -9,4 +9,8 @@ export abstract class Api {
   static getUrlPost(postId: string) {
     return `${process.env.NEXT_PUBLIC_DOMAIN}/posts/${postId}`;
   }
+
+  static getCommentsByPostId(postId: string) {
+    return `${process.env.NEXT_PUBLIC_DOMAIN}/comments?postId=${postId}`;
+  }
 }

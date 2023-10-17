@@ -10,9 +10,11 @@ import { useGitHubSetter } from "@/context/gitHub";
 
 export const Post = ({
   title,
+  id,
   body,
   gitHubLink = "#",
 }: {
+  id: string;
   title: string;
   body: string;
   gitHubLink?: string;
@@ -33,7 +35,7 @@ export const Post = ({
           category={postMock.category}
           createdAt={postMock.createdAt}
         />
-        <PostFooter readTime={postMock.readTime} />
+        <PostFooter postId={id} readTime={postMock.readTime} />
       </div>
     </article>
   );
