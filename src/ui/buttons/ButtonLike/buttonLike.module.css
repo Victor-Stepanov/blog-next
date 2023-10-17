@@ -1,0 +1,29 @@
+.root {
+  display: inline-block;
+
+  width: 48px;
+  height: 48px;
+  padding: 15px;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 40px;
+  background-color: var(--c-white);
+}
+
+.unactive {
+  border: 1px solid #303030;
+}
+
+.unactive svg path {
+  stroke: #303030;
+}
+
+.active {
+  background-color: #303030;
+}
+
+.active svg path {
+  stroke: var(--c-white);
+}

@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
 
-import { Layout } from "@/components/Layout";
+import { Layout } from "@/layout";
 
 import type { Metadata } from "next";
 
