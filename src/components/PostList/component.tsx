@@ -13,7 +13,11 @@ export const PostList = ({ data }: { data: PostResponse[] }) => {
         {data.map((post) => {
           return (
             <li key={post.id}>
-              <Post title={post.title} body={post.body} />
+              <Post
+                gitHubLink="https://github.com/Victor-Stepanov"
+                title={post.title}
+                body={post.body}
+              />
             </li>
           );
         })}
