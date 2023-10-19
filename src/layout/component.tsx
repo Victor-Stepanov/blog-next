@@ -1,13 +1,7 @@
-import React from "react";
-
 import { Header } from "./Header";
 import styles from "./layout.module.css";
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-export const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className={styles.root}>
       <Header className={styles.header} />

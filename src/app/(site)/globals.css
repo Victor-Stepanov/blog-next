@@ -1,0 +1,33 @@
+html,
+body {
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+
+	color: var(--black);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-size-adjust: 100%;
+	text-rendering: optimizelegibility;
+}
+
+a {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--black: #000;
+	--c-black: #2C2C2C;
+	--c-black-20: #6E6E6E;
+	--c-black-30: #4B4B4B;
+	--c-border: #F5F5F5;
+	--c-primary: #1473E6;
+	--c-white: #FFF;
+}

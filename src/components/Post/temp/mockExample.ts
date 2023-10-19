@@ -1,6 +1,6 @@
 import cardImage from "./card.png";
 
-export const post = {
+export const postMock = {
   imageSrc: cardImage.src,
   category: "Front-end",
   createdAt: "1 месяц назад",

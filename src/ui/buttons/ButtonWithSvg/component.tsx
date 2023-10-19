@@ -3,7 +3,7 @@ import React from "react";
 
 import styles from "./button.module.css";
 
-import { ButtonProps } from "@/types/button.types";
+import { ButtonProps } from "@/interfaces/button.types";
 
 interface ButtonWithSvgProps extends ButtonProps {
   Icon: React.ComponentType;

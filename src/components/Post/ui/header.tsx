@@ -1,8 +1,8 @@
 import styles from "./ui.module.css";
 
-import { CardHeaderProps } from "@/types/component.types";
+import { PostHeaderProps } from "@/interfaces/component.interfaces";
 
-export const CardHeader = ({ imageSrc }: CardHeaderProps) => {
+export const PostHeader = ({ imageSrc }: PostHeaderProps) => {
   return (
     <header className={styles.header}>
       <img className={styles.image} src={imageSrc} alt="Изображение" />

@@ -2,11 +2,12 @@
 
 import React from "react";
 
+import { Api } from "@/helpers/api";
 import { ButtonLike } from "@/ui";
 
-export const PostContainer = () => {
+export const FullPostContainer = () => {
   const [active, setActive] = React.useState(false);
-  const [postId, setPostId] = React.useState<number>(0);
+  const [postId, setPostId] = React.useState(0);
 
   React.useEffect(() => {
     const updateLikes = async () => {
@@ -14,12 +15,9 @@ export const PostContainer = () => {
         return;
       }
       try {
-        const response = await fetch(
-          `https://jsonplaceholder.typicode.com/posts/${postId}`,
-          {
-            method: "PATCH",
-          }
-        );
+        const response = await fetch(Api.getUrlPost(String(postId)), {
+          method: "PATCH",
+        });
         if (response.ok) {
           setActive(true);
         }

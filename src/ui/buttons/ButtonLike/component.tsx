@@ -3,7 +3,7 @@ import React from "react";
 
 import styles from "./buttonLike.module.css";
 
-import { ButtonProps } from "@/types/button.types";
+import { ButtonProps } from "@/interfaces/button.types";
 import { ButtonLikeIcon } from "@/ui/icons/buttonLike";
 
 interface ButtonLikeProps extends ButtonProps {

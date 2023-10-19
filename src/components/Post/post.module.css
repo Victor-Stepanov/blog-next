@@ -1,0 +1,15 @@
+.root {
+	width: 100%;
+	max-width: 350px;
+
+	border: 1px solid var(--c-border);
+	border-radius: 5px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	padding: 10px;
+}

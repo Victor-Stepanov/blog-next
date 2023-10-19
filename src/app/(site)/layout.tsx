@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
 
+import { GitHubProvider } from "@/context/gitHub";
 import { Layout } from "@/layout";
 
 import type { Metadata } from "next";
@@ -20,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={openSans.className}>
-        <Layout>{children}</Layout>
+        <GitHubProvider>
+          <Layout>{children}</Layout>
+        </GitHubProvider>
       </body>
     </html>
   );

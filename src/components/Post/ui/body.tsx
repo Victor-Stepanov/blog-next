@@ -3,15 +3,15 @@ import React from "react";
 
 import styles from "./ui.module.css";
 
-import { CardBodyProps } from "@/types/component.types";
+import { PostBodyProps } from "@/interfaces/component.interfaces";
 import { Category, Tag, Time, Htag, Text, LikeCounter } from "@/ui";
 
-export const CardBody = ({
+export const PostBody = ({
   category,
   createdAt,
   title,
   description,
-}: CardBodyProps) => {
+}: PostBodyProps) => {
   const [count, setCount] = React.useState(0);
 
   return (
