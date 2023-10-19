@@ -7,7 +7,7 @@ import { ButtonLike } from "@/ui";
 
 export const FullPostContainer = () => {
   const [active, setActive] = React.useState(false);
-  const [postId, setPostId] = React.useState<number>(0);
+  const [postId, setPostId] = React.useState(0);
 
   React.useEffect(() => {
     const updateLikes = async () => {

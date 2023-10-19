@@ -10,18 +10,16 @@ export const PostList = ({ data }: { data: PostResponse[] }) => {
   return (
     <section>
       <ul className={styles.postList}>
-        {data.map((post) => {
-          return (
-            <li key={post.id}>
-              <Post
-                id={post.id}
-                gitHubLink="https://github.com/Victor-Stepanov"
-                title={post.title}
-                body={post.body}
-              />
-            </li>
-          );
-        })}
+        {data.map((post) => (
+          <li key={post.id}>
+            <Post
+              id={post.id}
+              gitHubLink="https://github.com/Victor-Stepanov"
+              title={post.title}
+              body={post.body}
+            />
+          </li>
+        ))}
       </ul>
     </section>
   );
