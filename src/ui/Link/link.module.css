@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  align-items: center;
+
+  color: var(--c-primary);
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
