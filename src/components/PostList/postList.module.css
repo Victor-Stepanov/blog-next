@@ -1,9 +1,9 @@
 .postList {
-	display: grid;
+  display: grid;
 
-	margin: 0;
+  margin: 0;
 
-	list-style: none;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	grid-gap: 33px;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 33px;
 }

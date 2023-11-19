@@ -1,17 +1,17 @@
 .root {
-	display: grid;
-	grid-template-columns: auto 1fr auto;
-	grid-template-rows: auto 1fr auto;
-	row-gap: 17px;
-	grid-template-areas:
-		"header header header"
-		"content content content";
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 17px;
+  grid-template-areas:
+    "header header header"
+    "content content content";
 }
 
 .header {
-	grid-area: header;
+  grid-area: header;
 }
 
 .content {
-	grid-area: content;
+  grid-area: content;
 }

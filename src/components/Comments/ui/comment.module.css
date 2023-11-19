@@ -1,0 +1,11 @@
+.authorInfo {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+
+	padding-bottom: 7px;
+}
+
+.authorInfo:last-child {
+	padding: 0;
+}
