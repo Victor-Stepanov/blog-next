@@ -1,17 +1,17 @@
 .root {
-  padding: 19px 29px;
+	padding: 19px 29px;
 
-  resize: none;
+	resize: none;
 
-  color: rgb(78 93 124 / 50%);
-  border: 1px solid rgb(40 40 40 / 16%);
-  border-radius: 8px;
+	color: rgb(78 93 124 / 50%);
+	border: 1px solid rgb(40 40 40 / 16%);
+	border-radius: 8px;
 
-  font-size: 15px;
-  font-weight: 400;
-  font-style: normal;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .root::placeholder {
-  color: var(--gray);
+	color: var(--gray);
 }

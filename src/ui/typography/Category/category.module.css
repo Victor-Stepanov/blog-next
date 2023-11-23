@@ -1,7 +1,7 @@
 .root {
-  color: var(--c-black-30);
+	color: var(--c-black-30);
 
-  font-size: 12px;
-  font-weight: 400;
-  line-height: normal;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: normal;
 }
