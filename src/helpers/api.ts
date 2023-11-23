@@ -6,10 +6,10 @@ export class Api {
   }
 
   static getUrlPost(postId: string) {
-    return `${process.env.NEXT_PUBLIC_DOMAIN}/${route.post}/${postId}`;
+    return `${process.env.NEXT_PUBLIC_DOMAIN}/${route.posts}/${postId}`;
   }
 
   static getCommentsByPostId(postId: string) {
-    return `${process.env.NEXT_PUBLIC_DOMAIN}/${route.comments}?postId=${postId}`;
+    return `${process.env.NEXT_PUBLIC_DOMAIN}/${route.comments}?_limit=2?postId=${postId}`;
   }
 }

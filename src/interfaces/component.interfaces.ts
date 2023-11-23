@@ -30,3 +30,9 @@ export interface CommentResponse {
   email: string;
   body: string;
 }
+
+export interface CommentProps extends Omit<CommentResponse, "postId"> {}
+
+export interface CommentsProps {
+  comments: CommentProps[];
+}

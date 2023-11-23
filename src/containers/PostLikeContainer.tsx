@@ -5,9 +5,9 @@ import React from "react";
 import { Api } from "@/helpers/api";
 import { ButtonLike } from "@/ui";
 
-export const FullPostContainer = () => {
+export const PostLikeContainer = ({ id }: { id: string }) => {
   const [active, setActive] = React.useState(false);
-  const [postId, setPostId] = React.useState(0);
+  const [postId, setPostId] = React.useState<string>();
 
   React.useEffect(() => {
     const updateLikes = async () => {
@@ -29,8 +29,8 @@ export const FullPostContainer = () => {
   }, [postId]);
 
   const handleClick = React.useCallback(() => {
-    setPostId(3);
-  }, []);
+    setPostId(id);
+  }, [id]);
   return (
     <ButtonLike
       viewVariant={active ? "active" : "unactive"}

@@ -2,13 +2,25 @@ import React from "react";
 
 import { fetchCommentsByPostId } from "@/api/fetchCommentsByPostId";
 import { fetchPost } from "@/api/fetchPostById";
+import { Comments } from "@/components/Comments";
+
+import { PageWrapper } from "@/components/PageWrapper";
+
+import { PostPageBody } from "@/components/PostPageBody";
+
+import { PostPageHeader } from "@/components/PostPageHeader";
 
 export default async function Post({ params }: { params: { id: string } }) {
-  const response = Promise.all([
+  const [post, comments] = await Promise.all([
     fetchPost(params.id),
     fetchCommentsByPostId(params.id),
   ]);
-  const [post, comments] = await response;
-  console.log(post, comments);
-  return <div>page</div>;
+
+  return (
+    <PageWrapper>
+      <PostPageHeader title={post.title} body={post.body} />
+      <PostPageBody postId={params.id} />
+      <Comments comments={comments} />
+    </PageWrapper>
+  );
 }

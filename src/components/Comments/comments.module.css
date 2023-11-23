@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+}
+
+.commentList {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.commentList li {
+  padding-bottom: 7px;
+}
+
+.commentList li:last-child {
+  padding-bottom: 0;
+}
