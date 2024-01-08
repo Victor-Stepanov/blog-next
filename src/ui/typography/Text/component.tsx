@@ -13,7 +13,7 @@ interface TextProps
 
 export const Text = ({ children, size = "small", ...rest }: TextProps) => {
   return (
-    <p className={cn(styles.root, size && styles[`p_size_${size}`])} {...rest}>
+    <p className={cn(styles.root, size && styles[size])} {...rest}>
       {children}
     </p>
   );
